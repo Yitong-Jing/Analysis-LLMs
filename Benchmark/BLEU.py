@@ -1,9 +1,9 @@
+# Berechnen die BLEU von generierter Text
 from nltk.translate.bleu_score import sentence_bleu
 import json
 import LLMs_json_input.Openassistant_automatisch as generierterText_LLM
 
 generierterTexte = generierterText_LLM.antwort
-#generierterTexte = ['Answer the question briefly:What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species? The Hobbit series by J.R.R. Tolkien.</s>', 'Answer the question briefly:Charlie is not quiet. Dave is green. Fiona is quiet. Harry is not furry. If Fiona is smart then Fiona is white. All quiet people are furry. Cold people are green. White people are green. Furry people are cold. If someone is blue and white then they are smart.Fiona is quiet.</s>', 'Answer the question briefly:Who held the record for the longest service in the Australian Parliament for a woman, and was surpassed by  a former Australian politician who was the 29th Speaker of the House of Representatives? Lucy Maud Montgomery MP for New fortuna</s>']
 
 with open('E:\\BA\\Datenset\\dev_QA9.json') as f:
     data = json.load(f)
