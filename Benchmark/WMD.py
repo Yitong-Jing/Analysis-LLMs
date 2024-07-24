@@ -1,3 +1,4 @@
+# Berechnen die WMD von generierter Text
 import gensim.downloader as api
 import json
 import LLMs_json_input.Openassistant_automatisch as generierterText_LLM
